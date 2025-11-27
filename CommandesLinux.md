@@ -57,6 +57,7 @@ cd ~ /documents/ : Se déplacer entre dossier
 ```bash
 cd
 cd Documents/
+cd /Hom
 ```
 
 - Indiquer le dossier courant (où on se trouve)
@@ -64,7 +65,21 @@ cd Documents/
 pwd
 ```
 
-- Savoir où je suis placé
+- Créer un dossier
 ```bash
-pwd
+mkdir ~/dossier_Test
+```
+- Supprimer un fichier ou un dossier
+```bash
+rm -R ~/dossier_Test
+```
+- Copier un fichier ou un dossier
+```bash
+cp -R ~/Téléchargements ~/Téléchargements2
+```
+Pas besoin de ~ si on est dans le répertoire, si on ne l'est pas ~ obligatoire
+
+- Trouver un fichier
+```bash
+find -name toto.txt
 ```
