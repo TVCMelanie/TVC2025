@@ -111,9 +111,10 @@ mkdir ~/nouveauDoss/ && cp toto.txt ~/nouveauDoss/
 *
 ```
 
--Créer un fichier
+-Créer un fichier ou créer un fichier vers une direction précisise
 ```bash
-touch fichier1.txt 
+touch fichier1.txt
+touch /home/stagiaire/fichier1.txt
 ```
 
 -Affiche le contenu du ficher
@@ -124,9 +125,14 @@ cat fichier1.txt
 -Ouvrir en console dans un éditeur
 ```bash
 nano fichier1.txt
+``` 
+
+-Supprimer le contenu d'un ficher texte
+```bash
+echo "Coucou" > fichier1.txt
 ```
 
--Copier un ficher dans un autre dossier
+-Ajouter du texte à un fichier texte
 ```bash
-cp Documents/ Téléchargements
+echo "coucou" >> fichier1.txt
 ```
