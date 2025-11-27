@@ -1,3 +1,56 @@
 # Rappel des commandes Linux
-##Etape 1 : Mise à jour du système
-bash
+## Lister le contenu d'un répertoire
+- Trouver le terminal : Ctrl + Alt + t
+- bash
+```bash
+```
+- Hirarchie stanrd de Linux : 
+```bash
+ls -l / : Lister le contenu à partir de la racine
+/ : racine, contient tous les fichiers et répertoires du système
+/bin & /sbin :
+/etc :
+/home :
+/var :
+/usr :
+/opt :
+/tmp :
+/dev, /proc, /sys :
+/boot :
+/media :
+/mnt :
+/root : 
+/run :
+/srv :
+```
+- Lister le contenu à partir de la racine
+```bash
+ls -l /
+```
+
+- Nettoyer son écran de terminal
+```bash
+clear
+```
+
+- Trouver le manuel d'aide
+```bash
+man ls
+man echo
+```
+
+- Savoir où je suis placé
+```bash
+pwd
+```
+-Aller puis Quitter un répetoire 
+```bash
+cd Téléchargements
+cd ~ : Retourner dossier personnel
+cd .. : remonte d'un niveau
+cd/home/stagiaire : retour par la racine
+cd ../Documents/
+cd ~ /documents/ : Se déplacer entre dossier 
+```
+
+
