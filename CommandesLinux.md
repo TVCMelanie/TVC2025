@@ -71,6 +71,7 @@ mkdir ~/dossier_Test
 ```
 - Supprimer un fichier ou un dossier
 ```bash
+rm text.txt
 rm -R ~/dossier_Test
 ```
 - Copier un fichier ou un dossier
@@ -82,4 +83,50 @@ Pas besoin de ~ si on est dans le répertoire, si on ne l'est pas ~ obligatoire
 - Trouver un fichier
 ```bash
 find -name toto.txt
+find name passwd
+```
+
+-Copier un ficher dans un autre dossier
+```bash
+cp -R Documents/ Téléchargements/
+(document c'est la source vers la destination)
+```
+
+-déplacer un ficher dans un autre dossier
+```bash
+mv /home/stagiaire/fichier1.txt /Documents/
+```
+
+-Copier un ficher dans un nouveau dossier à créer
+```bash
+mkdir ~/nouveauDoss/ && cp toto.txt ~/nouveauDoss/
+```
+-Récursivité, va regarder l'ensemble des dossiers et sous dossier et tout prtendre en compte
+```bash
+-R
+```
+
+-entireté du contenu du dossier
+```bash
+*
+```
+
+-Créer un fichier
+```bash
+touch fichier1.txt 
+```
+
+-Affiche le contenu du ficher
+```bash
+cat fichier1.txt
+```
+
+-Ouvrir en console dans un éditeur
+```bash
+nano fichier1.txt
+```
+
+-Copier un ficher dans un autre dossier
+```bash
+cp Documents/ Téléchargements
 ```
