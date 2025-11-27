@@ -53,4 +53,18 @@ cd ../Documents/
 cd ~ /documents/ : Se déplacer entre dossier 
 ```
 
+- changer de dossier
+```bash
+cd
+cd Documents/
+```
 
+- Indiquer le dossier courant (où on se trouve)
+```bash
+pwd
+```
+
+- Savoir où je suis placé
+```bash
+pwd
+```
