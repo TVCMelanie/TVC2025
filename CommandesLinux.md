@@ -378,5 +378,19 @@ sudo apt-get purge [paquets]
 ```
 ---
 ## MAJ des MPP utilisateur
+On peut changer un mpd seulement sur l'utilisateur sur leqeul on est.
+```bash
+passwd
+```
+
+- Connaitre l'état de son mpd actuel
+```bash
+passwd -s sysadmin
+```
+
+- Le compte root peut modifier le mdp de n'importe quel utilisateur
+```bash
+passwd sysadmin
+```
 
 
