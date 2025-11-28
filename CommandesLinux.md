@@ -1,28 +1,32 @@
 # Rappel des commandes Linux
 ## Lister le contenu d'un répertoire
+### Les bases
 - Trouver le terminal : Ctrl + Alt + t
 - bash
-```bash
-```
+---
 - Hirarchie stanrd de Linux : 
-```bash
-ls -l / : Lister le contenu à partir de la racine
-/ : racine, contient tous les fichiers et répertoires du système
-/bin & /sbin :
-/etc :
-/home :
-/var :
-/usr :
-/opt :
-/tmp :
-/dev, /proc, /sys :
-/boot :
-/media :
-/mnt :
-/root : 
-/run :
-/srv :
-```
+- / (racine) : Contient tous les fichiers et répertoires du système.
+
+ - */bin & /sbin* : Programmes et commandes essentielles pour tous les utilisateurs (bin) et pour l'ad
+ministration (sbin).
+ - */etc* : Fichiers de configuration du système et des services.
+- */home* : Dossiers personnels des utilisateurs (ex. /home/stagiaire).
+- */var* : Données variables comme logs (/var/log) et files d’attente (/var/spool).
+- */usr* : Logiciels et bibliothèques utilisateur (/usr/bin, /usr/lib).
+- */opt* : Applications tierces installées manuellement.
+- */tmp* : Fichiers temporaires supprimés au redémarrage.
+- */dev, /proc, /sys* : Systèmes de fichiers spéciaux pour les périphériques et processus.
+- */boot* : Contient les fichiers nécessaires au démarrage, comme le noyau Linux (vmlinuz), le chargeur
+ de démarrage (GRUB).
+- */media* : Points de montage pour les périphériques amovibles (clés USB, disques durs externes,
+ CD/DVD).
+- */mnt* : Point de montage temporaire pour des systèmes de fichiers externes.
+- */root* : Dossier personnel de l'utilisateur root (administrateur).
+- */run* : Stocke les informations volatiles du système (PID, sockets, fichiers de verrouillage) après le
+ démarrage.
+- */srv* : Contient les données des services hébergés par le système (serveurs web, FTP, etc.)
+
+---
 - Lister le contenu à partir de la racine
 ```bash
 ls -l /
@@ -136,3 +140,39 @@ echo "Coucou" > fichier1.txt
 ```bash
 echo "coucou" >> fichier1.txt
 ```
+
+## Les options de la commande LS
+-Ajouter la récursive (affiche dans l'odre inverse)
+```bash
+ls -rl
+ls -lr
+ls -l -r
+```
+
+-Affiche le répertoire de /var/log
+```bash
+ls -l /var/log/
+```
+
+-Affiche le répertoire de /var/log par ordre d'horodatage
+```bash
+ls -lt /var/log/
+```
+
+-Affiche le répertoire de /var/log selon la taille du ficher
+```bash
+ls -l -s /var/log/
+```
+
+-Affiche le répertoire de /var/log mais inverse tout type de tri :
+```bash
+ls -lsr /var/log/
+```
+
+-Affiche le répertoire de /var/log
+```bash
+ls -l /var/log/
+```
+
+
+
