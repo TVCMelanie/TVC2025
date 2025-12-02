@@ -1,8 +1,9 @@
-# Rappel des commandes Linux
+use# Rappel des commandes Linux
 ## Lister le contenu d'un répertoire
 ## Les bases
 - Trouver le terminal : Ctrl + Alt + t
 - Retrouver l'invite de commande : Ctrl + c
+- Entrainement shell : https://chinginfo.fr
 - bash
 ---
 . est le raccourci représentant le répertoire courant
