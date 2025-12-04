@@ -135,7 +135,7 @@ cat fichier1.txt
 nano fichier1.txt
 ``` 
 
-- Supprimer le contenu d'un ficher texte
+- Supprimer le contenu d'un ficher texte et remplace
 ```bash
 echo "Coucou" > fichier1.txt
 ```
