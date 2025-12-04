@@ -105,6 +105,11 @@ cp -R Documents/ Téléchargements/
 mv /home/stagiaire/fichier1.txt /Documents/
 ```
 
+- Renommer le nom de ficher (pas de chemin juste noter les fichiers pour un changement de nom)
+```bash
+mv fichier1.txt ficher2.txt
+```
+
 - Copier un ficher dans un nouveau dossier à créer
 ```bash
 mkdir ~/nouveauDoss/ && cp toto.txt ~/nouveauDoss/
