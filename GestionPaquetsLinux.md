@@ -16,9 +16,9 @@ cat /etc/apt/sources.list
 apt --help
 ```
 
-- Mise à jour des lists des paquets à mettre à jour
+- Mise à jour des sources des paquets et des paquets 
 ```bash
-apt update
+apt update && apt upgrade
 ```
 
 - Effectue la mise à jour
@@ -87,3 +87,53 @@ apt install --only-upgrade firefox-esr
 ```bash
 
 ```
+--- 
+# Note de christophe
+- Installer un logiciel à partir des dépots offiiel débian
+```
+apt install vlc
+```
+
+- Installer un logiciel à partir des dépôt d'un éditeur
+```
+Dans
+cd /atc/apt/keyrings/
+wget https://dl.google.com/linux/linux_signing_key.pub
+mv linux_signing_key.pub google_key.pub
+gpg --dearmor google_key.pub > google_key.gpg
+echo deb [signed-by=/usr/share/keyrings/google-key.pub.gpg]
+http://dl.google.com/linux/chrome/deb/stable main > /etc/apt/sources.list.d/google-chrome.list
+apt update
+apt install google-chrome-stable
+```
+
+- Installer un logiciel Discord manuellement à partir d'un fichier .deb
+```
+wget discord.deb https://discord.com/api/download?platform=linux&format=deb
+dpkg -i discord.deb
+si besoin :
+apt --fix-broken install
+```
+
+## Configuration de l'horloge
+- Syncronisation sur un serveur spécifique NTP : fichier /etc/systemd/timesyncd.conf
+```conf
+nona timesyncd.conf
+[Time]
+NTP=ntp.univ-rennes2.fr
+FallbackNTP=0.debian.pool.ntp.org 1.debian.pool.ntp.org 2.debian.pool.ntp.org 3.debian.pool.ntp.org
+```
+
+- Activer NTP
+```
+timedatectl set-ntp true
+```
+
+- Vérifier la syncronisation
+```
+timedatectl timesync-status
+```
+
+
+
+- 
