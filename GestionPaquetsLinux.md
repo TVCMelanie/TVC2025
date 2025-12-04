@@ -75,8 +75,15 @@ apt search gimp
 ```bash
 apt install --only-upgrade firefox-esr
 ```
+apt upgrade --only... fait la même chose
 
 - Demandé de mettre à jour uniquement firefox
 ```bash
 apt install --only-upgrade firefox-esr
+```
+---
+## Gestion des dépôts et sources de logiciels
+- 
+```bash
+
 ```
